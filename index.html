@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu trello</title>
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <span>projects / designerluiscoms</span>
+            <h1><img src="./svg/SVG/Ativo 1.svg" alt="">
+                <br>
+                <span class="MyTotal" id="MyTotal">(0 Quadros | 0 Tarefas)</span>
+            </h1>
+
+        </header>
+
+        <section class="columns">
+
+            <section class="column">
+
+                <h2 class="column__title">VAMOS COMEÇAR
+                    <span class="somar"></span>
+                </h2>
+
+
+                <section class="column__cards">
+                    <div class="itens">
+                        <i class="fa-solid fa-trash trash"></i>
+                        <i class="fa-solid fa-plus adcionar"></i>
+                    </div>
+                    <section class="card" draggable="true">
+                        <div class="taskPriority">
+                        </div>
+                        <p class="text">Clique sobre o icone para abrir ...</p>
+                        <div class="innerTaskItems">
+                            <div class="boxInnerTaskItems">
+                                <div class="innerTaskPriority">
+                                    <input type="color" name="color" id="">
+                                </div>
+                                <i class=" fa-solid fa-x closeInnerTask"></i>
+                                <h4 class="innerTaskItems__title" contenteditable="true">Comece a trabalhar.</h4>
+                                <ul class="innerTaskItems__list">
+                                    <div class="innerListItem">
+                                        <li contenteditable="true">Arraste e solte para reorganizar... </li>
+                                        <i class="fa-solid fa-minus removeThisItemFromList"></i>
+                                    </div>
+                                    <div class="innerListItem">
+                                        <li contenteditable="true">Organize seus quadros com → ←... </li>
+                                        <i class="fa-solid fa-minus removeThisItemFromList"></i>
+                                    </div>
+                                    <div class="innerListItem">
+                                        <li contenteditable="true">Faça tudo com a maior facilidade... </li>
+                                        <i class="fa-solid fa-minus removeThisItemFromList"></i>
+                                    </div>
+                                    <div class="innerListItem">
+                                        <li contenteditable="true">Adcione novas listas clicando no icone.. </li>
+                                        <i class="fa-solid fa-minus removeThisItemFromList"></i>
+                                    </div>
+                                
+                                </ul>
+                                <i class="fa-solid fa-add addList"></i>
+                                <P class="innerTaskItems__text" contenteditable="true">Para adcicionar novas, volte ao quadro principal</P>
+                            </div>
+                        </div>
+                        <div class="iconOptions">
+                            <i class="fa-solid fa-pen-to-square edit"></i>
+                            <i class="fa-solid fa-chevron-up moveUp"></i>
+                            <i class="fa-solid fa-copy copy"></i>
+                            <i class="fa-solid fa-chevron-down moveDown"></i>
+                        </div>
+                    </section>
+
+                </section>
+            </section>
+
+            <i class="fa-solid fa-plus adcionar_quadro"></i>
+
+        </section>
+    </main>
+
+    <div class="modal_confirm">
+        <div class="modal">
+            <p>Tem certeza que deseja deletar os items?</p>
+            <div class="modal__buttons">
+                <button class="cancel_button">Cancelar</button>
+                <button class="delete_button">Deletar</button>
+            </div>
+        </div>
+
+
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
